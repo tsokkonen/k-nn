@@ -2,7 +2,7 @@ import numpy as np
 import unittest
 import learner
 
-class TestBinFunctions(unittest.TestCase):
+class TestLearnerFunctions(unittest.TestCase):
 
     def test_dist(self):
         x1 = np.array([2, 2])
