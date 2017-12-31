@@ -7,12 +7,6 @@ class TestLearnerFunctions(unittest.TestCase):
         self.xs = learner.read_data("xs.txt")
         self.ys = learner.read_data("ys.txt")
 
-    def tearDown(self):
-        self.xs.dispose()
-        self.ys.dispose()
-        self.xs = None
-        self.ys = None
-
     def test_dist(self):
         x = np.array([2, 2])
         result = learner.dist(x, self.xs)
