@@ -24,5 +24,13 @@ class TestLearnerFunctions(unittest.TestCase):
         diff = result - expected
         self.assertTrue(abs(diff) < 0.0001)
 
+    def test_k_nn(self):
+        x = np.array([6, 8])
+        k = 3
+        result = learner.k_nn(k, x, self.xs, self.ys)
+        expected = 0.0
+        diff = result - expected
+        self.assertTrue(abs(diff) < 0.0001)
+
 if __name__ == '__main__':
     unittest.main()
