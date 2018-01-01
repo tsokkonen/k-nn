@@ -1,5 +1,5 @@
 # k-nn
-Implementation of 1-NN learning rule for the *k* nearest neighbors algorithm.
+Implements the *k* nearest neighbors algorithm.
 
 # Example usage
 To load the training and label sets, plot the sample points, and classify one new point, do the following:
@@ -13,3 +13,4 @@ To load the training and label sets, plot the sample points, and classify one ne
 >>> lrn.one_nn(x, xs, ys)
 1.0
 ```
+See also the apartments.py script.
