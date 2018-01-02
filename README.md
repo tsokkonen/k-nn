@@ -1,16 +1,5 @@
 # k-nn
-Implements the *k* nearest neighbors algorithm.
-
-# Example usage
-To load the training and label sets, plot the sample points, and classify one new point, do the following:
-```Python
->>> import numpy as np
->>> import learner as lrn
->>> xs = lrn.read_data("xs.txt")
->>> ys = lrn.read_data("ys.txt")
->>> lrn.show_samples(xs, ys)
->>> x = np.array([9, 1])
->>> lrn.one_nn(x, xs, ys)
-1.0
-```
-See also the apartments.py script.
+Implements the *k* nearest neighbors algorithm. Data are 3498 homes
+sold in Helsinki in 2017, including features: price per square meter,
+living area in square meters, and age in years in 2017. Labels
+indicate whether the home is an apartment (1) or other type (0).
